@@ -3,14 +3,17 @@ padding-top: 24px;
 padding-bottom: 24px;
 border-bottom: 1px solid #EEEEEE;
 }
+
 .header-container{
 display: flex;
 align-items: center;
 }
+
 .navigation{
 display: flex;
 align-items: center;
 }
+
 .logo{
 font-family: var(--secondary-font);
 font-weight: bold;
@@ -20,10 +23,22 @@ letter-spacing: 0.03em;
 color: var(--accent-color);
 margin-right: 90px;
 }
+
 .logo-header-part-2{
 color: #000000;
 }
+
+
+.menu-list{
+display: flex;
+align-items: center;
+margin-left: auto;
+}
+
+
 .menu-link{
+display: flex;
+align-items: center;
 font-family: var(--main-font);
 font-weight: 500;
 font-size: 14px;
@@ -32,43 +47,40 @@ letter-spacing: 0.02em;
 color: var(--main-text-color);
 transition: color 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-link.current {
-color: var(--accent-color);
-position: relative;
-}
-.menu-link.current::after{
-display: block;
-content: "";
-width: 100%;
-height: 4px;
-background-color: var(--accent-color);
-border-radius: 2px;
-position: absolute;
-bottom: -34px;
-cursor: pointer;
-}
-.menu-link:hover,
-.menu-link:focus {
-color: var(--accent-color);
-}
-.menu-link{
-display: flex;
-align-items: center;
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+
+    &.current {
+    color: var(--accent-color);
+    position: relative;
+
+        &::after{
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        position: absolute;
+        bottom: -34px;
+        cursor: pointer;
+        }
+    }
 }
 
-.menu-list{
-display: flex;
-align-items: center;
-margin-left: auto;
-} 
-.menu-item:not(:last-child){
-margin-right: 50px;
-}
 .menu-item{
 display: flex;
 align-items: center;
+
+    &:not(:last-child){
+    margin-right: 50px;
+    }
 }
+
+
 .mail-link{
 font-family: var(--main-font);
 font-weight: 500;
@@ -79,11 +91,12 @@ color: var(--secondary-text-color);
 transition: color 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    }
 }
-.mail-link:hover,
-.mail-link:focus{
-color: var(--accent-color);
-}
+
 .tel-link{
 font-family: var(--main-font);
 font-weight: 500;
@@ -95,25 +108,33 @@ text-align: center;
 display: flex;
 transition: color 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.tel-link:hover,
-.tel-link:focus{
-color: var(--accent-color);
-}
-.mail-link-svg:hover,
-.mail-link-svg:focus,
-.tel-link-svg:hover,
-.tel-link-svg:focus{
-fill: var(--accent-color);
-}
-.mail-link-svg{
 
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    }
+}
+
+
+.mail-link-svg{
 fill: currentColor;
 margin-right: 10px;
+
+    &:hover,
+    &:focus{
+    fill: var(--accent-color);
+    }
 }
+
+
 .tel-link-svg{
 padding: 0;
 border: 0;
 fill: currentColor;
 margin-right: 10px;
+
+    &:hover,
+    &:focus{
+    fill: var(--accent-color);
+    }
 }

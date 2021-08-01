@@ -8,10 +8,13 @@ display: flex;
 }
 .our-features-item{
 display: list-item;
+
+    &:not(:last-child){
+    margin-right: 30px;
+    }
 }
-.our-features-item:not(:last-child){
-margin-right: 30px;
-}
+
+
 .our-features-title{
 font-family: var(--main-font);
 font-weight: bold;
