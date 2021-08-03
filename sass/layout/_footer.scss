@@ -96,7 +96,7 @@ margin-left: 86px;
 display: flex;
 }
 
-.footer-social-list_item{
+.footer__social-list_item{
 margin-right: 10px;
 }
 
@@ -132,12 +132,12 @@ background-color: rgba(255, 255, 255, 0.1);
 fill: currentColor;
 }
 
-.footer-form{
+.footer__form{
 display: flex;
 margin-left: 86px;
 }
 
-.footer-form-title{
+.footer__form_title{
 align-items: center;
 font-weight: bold;
 font-size: 14px;
@@ -149,7 +149,7 @@ margin-bottom: 20px;
 margin-left: 86px;
 }
 
-.footer-form-input{
+.footer__form_input{
 width: 358px;
 height: 50px;
 border: 1px solid rgba(255, 255, 255, 0.3);
@@ -166,7 +166,7 @@ color: var(--accent-text-color);
     }
 }
 
-.footer-form-btn {
+.footer__form_btn {
 display: flex;
 width: 200px;
 height: 50px;
@@ -184,7 +184,7 @@ margin-left: 12px;
 cursor: pointer;
 }
 
-.footer-form-icon {
+.footer__form_icon {
 width: 24px;
 height: 24px;
 margin-left: 10px;
