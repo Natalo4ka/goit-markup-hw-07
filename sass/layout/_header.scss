@@ -2,10 +2,9 @@
 padding-top: 24px;
 padding-bottom: 24px;
 border-bottom: 1px solid #EEEEEE;
-justify-content: space-between;
 }
 
-.header-container{
+.header__container{
 display: flex;
 align-items: center;
 }
@@ -15,7 +14,7 @@ display: flex;
 align-items: center;
 }
 
-.logo{
+.header__logo{
 font-family: var(--secondary-font);
 font-weight: bold;
 font-size: 26px;
@@ -25,14 +24,14 @@ color: var(--accent-color);
 margin-right: 90px;
 }
 
-.logo-header-part-2{
+.header__logo_part-2{
 color: #000000;
 }
 
 
 .header__list{
 display: flex;
-justify-content: space-between;
+margin-left: auto;
 }
 
 .header__link{
