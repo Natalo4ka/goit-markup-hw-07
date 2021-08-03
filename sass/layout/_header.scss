@@ -1,7 +1,8 @@
-.page-header{
+.header{
 padding-top: 24px;
 padding-bottom: 24px;
 border-bottom: 1px solid #EEEEEE;
+justify-content: space-between;
 }
 
 .header-container{
@@ -29,14 +30,12 @@ color: #000000;
 }
 
 
-.menu-list{
+.header__list{
 display: flex;
-align-items: center;
-margin-left: auto;
+justify-content: space-between;
 }
 
-
-.menu-link{
+.header__link{
 display: flex;
 align-items: center;
 font-family: var(--main-font);
@@ -71,7 +70,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-.menu-item{
+.header__item{
 display: flex;
 align-items: center;
 
@@ -81,7 +80,7 @@ align-items: center;
 }
 
 
-.mail-link{
+.header__mail{
 font-family: var(--main-font);
 font-weight: 500;
 font-size: 14px;
@@ -97,7 +96,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-.tel-link{
+.header__tel{
 font-family: var(--main-font);
 font-weight: 500;
 font-size: 14px;
@@ -116,7 +115,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.mail-link-svg{
+.header__mail_icon{
 fill: currentColor;
 margin-right: 10px;
 
@@ -127,7 +126,7 @@ margin-right: 10px;
 }
 
 
-.tel-link-svg{
+.header__tel_icon{
 padding: 0;
 border: 0;
 fill: currentColor;
